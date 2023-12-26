@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="demo.css">
+    <style>
+        h5 {
+            color: black;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        /* Attribute selectors */
+        a[target] {
+            background-color: yellow;
+        }
+
+        a[title~="google"] {
+            width: auto;
+            height: 25px;
+            border: solid red 2px;
+        }
+
+        a[class |="wiki"] {
+            background-color: cyan;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="first-container" id="content">
+        <h5>first container</h5>
+    </div>
+    <p>
+        1
+    </p>
+    <div>
+        <span>
+            HTML
+        </span>
+    </div>
+    <a href="https://www.w3schools.com/css/default.asp">
+        Link w3schools
+    </a>
+    <p>The first css by Minh. Some more text. More, more,...</p>
+    <a href="http://www.wikipedia.org" target="wiki">wikipedia.org</a>
+    <a href="https://www.google.com" title="google">google.com</a>
+    <a href="https://www.google.com" title="abcgoogle">google1.com</a>
+    <a href="http://www.wikipedia.org" class="wiki-final">wikipedia.org</a>
+</body>
+
+</html>

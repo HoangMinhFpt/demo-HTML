@@ -1,0 +1,31 @@
+/* demo simple selector: #id */
+#content{
+    background-color: yellow;
+    border: solid black 2px;
+}
+
+/* Combinator selectors */
+/* adjacent sibling selector */
+div + p{
+background-color: red;
+} 
+/* descendant selector */
+div span{
+    color: crimson;
+    background-color: darkblue;
+}
+
+/* Pseudo-class selectors */
+a:link{
+    color: blue;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+
+/* Pseudo-elements selectors */
+p::first-letter{
+    color: green;
+    font-size: 50px;
+}
