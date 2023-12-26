@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="demo.css">
     <style>
-        h5 {
+        h3 {
             color: black;
             text-transform: uppercase;
             text-align: center;
@@ -26,13 +26,19 @@
         a[class |="wiki"] {
             background-color: cyan;
         }
+
+        img {
+            width: 400px;
+            height: 255px;
+            float: right;
+        }
     </style>
     <title>Document</title>
 </head>
 
 <body>
     <div class="first-container" id="content">
-        <h5>first container</h5>
+        <h3 id="title-first">first container_STICKY</h3>
     </div>
     <p>
         1
@@ -50,6 +56,31 @@
     <a href="https://www.google.com" title="google">google.com</a>
     <a href="https://www.google.com" title="abcgoogle">google1.com</a>
     <a href="http://www.wikipedia.org" class="wiki-final">wikipedia.org</a>
+    <hr />
+    <div class="second-container">
+        <h3 id="title">second container_POSITION</h3>
+    </div>
+    <hr />
+
+    <div class="third-container">
+        <h3>third container_FLOAT</h3>
+        <img src="https://cdn.trangcongnghe.com.vn/uploads/posts/2023-09/thumbs/one-pice.jpg" alt="one-pice">
+    </div>
+    <hr />
+    <h3>fouth container_FLEXBOX</h3>
+    <div class="fouth-container">
+        <div class="flexbox-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+    </div>
 </body>
 
 </html>
