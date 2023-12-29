@@ -1,112 +1,86 @@
-body {
-    height: 100vh;
-    background-color: grey;
-    max-width: 85%;
-    margin: 10px auto;
+/* demo simple selector: #id, position: sticky */
+#content {
+    background-color: yellow;
+    border: solid black 2px;
+    position: sticky;
+    top: 10px;
 }
 
-.form {
-    width: 100%;
+/* Combinator selectors */
+/* adjacent sibling selector */
+div+p {
+    background-color: red;
+}
+
+/* descendant selector */
+div span {
+    color: crimson;
+    background-color: darkblue;
+}
+
+/* Pseudo-class selectors */
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+/* Pseudo-elements selectors */
+p::first-letter {
+    color: green;
+    font-size: 50px;
+}
+
+/* position: relative */
+.second-container {
+    height: 250px;
+    background-color: deeppink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* position: absolute */
+#title {
+    background-color: aqua;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+
+.third-container {
+    height: 300px;
+}
+
+/* display: flex, flexbox */
+.fouth-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.form_input {
-    padding: 20px;
-    border: 0;
-    border-radius: 5px;
-    outline: none;
+.fouth-container .flexbox-container {
+    width: 20%;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.fouth-container .flexbox-container>div {
+    height: 55px;
+    width: 50px;
+    margin: 5px 10px;
     font-size: 20px;
-    font-family: "Poppins";
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
-}
-
-.form_submit {
-    padding: 20px;
-    color: white;
-    font-weight: 500;
-    border: 0;
-    border-radius: 5px;
-    outline: none;
-    background-color: #00aefd;
-    margin-left: 10px;
-    font-size: 20px;
-    font-family: "Poppins";
-    cursor: pointer;
-}
-
-.main {
-    margin: 20px auto;
-    background-color: white;
-    border-radius: 5px;
-}
-
-.main_onepiece {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-img {
-    width: 400px;
-    height: 255px;
-    border-radius: 5px;
-}
-
-.main_onepiece-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 10px 0 0;
-}
-
-.main_onepiece-desc {
-    font-size: 20px;
-}
-
-/* Mobile & tablet: width < 1024px */
-@media only screen and (max-width: 63.9375rem) {
-
-    .form {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    input {
-        width: 100%;
-    }
-
-    .form_submit {
-        width: 100%;
-        background-color: red;
-        margin: 10px auto;
-        text-align: center;
-    }
-
-    .main_onepiece {
-        flex-direction: column;
-    }
-
-    img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .main_onepiece-img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 10px;
-    }
-
-    .main_onepiece-info {
-        padding: 10px;
-    }
-}
-
-@media only screen and (min-width: 46.75rem) and (max-width: 63.9375rem) {
-    .form_submit {
-        background-color: orange;
-    }
 }

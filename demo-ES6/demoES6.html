@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1,
+        p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+    <title>Demo Variable</title>
+
+</head>
+
+<body>
+
+    <div>
+        <h1 style="text-transform: uppercase;">demo variable</h1>
+        <p>INTEGER: <span id="demo-integer"></span></p>
+        <p>FLOAT: <span id="demo-float"></span> </p>
+        <p>STRING: <span id="demo-string"></span></p>
+        <p>ARRAY: <span id="demo-array"></span></p>
+        <p>OBJECT: <span id="demo-object"></span></p>
+    </div>
+    <script>
+        let a = 5, b = 2.5, d;
+        let c = .25;
+        document.getElementById("demo-integer").innerHTML = a + "," + b + ", " + c;
+        console.log("undefined: ", d); // demo undefined variable
+
+        let x = 10, y = 0;
+        document.getElementById("demo-float").innerHTML = !!x + ", " + !!y;//demo boolean variable
+
+        let s1 = "Hello word", s2 = ", JS";
+        document.getElementById("demo-string").innerHTML = s1 + s2; // demo string variable
+
+        let a1 = [1, 2, 3, 4, 5]
+        let name = ["Minh", "JS", "HTML"]
+        let empty = []
+        document.getElementById("demo-array").innerHTML = a1 + ", [" + empty + "], " + name;
+
+        let fruit = { name: "Apple", color: "red", price: "50000" }
+        document.getElementById("demo-object").innerHTML = "Name of fruit: " + fruit.name; //demo-object
+    </script>
+</body>
+
+</html>
