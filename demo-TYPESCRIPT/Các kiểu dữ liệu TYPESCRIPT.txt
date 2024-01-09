@@ -1,0 +1,32 @@
+Các kiểu dữ liệu TYPESCRIPT:
+	+ boolean
+	+ number
+	+ string
+	+ array
+	+ tuple
+	+ enumm
+	+ any
+	+ void
+	+ null-undefined
+Khai báo biến:
+	- Các quy tắc:	
+		+ Không thể sử dụng từ khoá để đặt tên cho biến. Chẳng hạn "var" là một từ khoá, nó không thể được sử dụng để đặt tên cho biến.
+		+ Tên của biến bao gồm các chữ cái trong bảng chữ cái latinh và các chữ số.
+		+ Tên của biến không được chứa khoảng trắng hoặc các ký tự đặc biệt ngoại trừ dấu gạch dưới ( _ ) hoặc ký hiệu đô la ( $ ).
+		+ Tên của biến không được bắt đầu bởi một chữ số.
+	- 3 cách khai báo biến: 
+		+ "var"
+			var variable_name: data_type = a_value;
+			var variable_name = a_value;
+
+			var variable_name;
+			variable_name = a_value;
+		+ "let"
+			let variable_name: data_type = a_value;
+			let variable_name = a_value;
+
+			let variable_name;
+			variable_name = a_value;
+		+ "const"
+			const variable_name: data_type = a_value;
+			const variable_name = a_value

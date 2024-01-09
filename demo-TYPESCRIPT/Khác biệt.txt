@@ -1,0 +1,11 @@
+Khác biệt:
+	+ GET lấy dữ liệu từ máy chủ, còn POST dùng để gửi dữ liệu lên server xử lý.
+	+ GET các dữ liệu được truyền hiển thị trên thanh URL. POST các dữ liệu được truyền qua HTTP Header
+	+ HTTP GET bị cache bởi trình duyệt, còn HTTP POST không bị cache.
+	+ GET thực thi nhanh hơn POST
+	+ Do dữ liệu ở GET được cache lại nên khi có yêu cầu nó tìm kiếm trong cache xem có hay không, nếu có thì trả về luôn không cần thực thi ở server, còn POST thì luôn luôn thực thi ở server.
+
+POST làm được GET không làm được:
+	+ Các tham số, dữ liệu không lưu trong lịch sử web
+	+ Không hạn chế độ dài dữ liệu
+	+ Gửi dữ liệu đến server được an toàn.
