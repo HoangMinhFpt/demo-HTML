@@ -5,12 +5,79 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0);
+  //khai báo biến
   var num1: number = 1;
   var num2 = 5;
-  let empName;
-  empName="MinhNH";
-  var booleanName: boolean = true ;
-  
+  console.log("num1 & num2:", num1, num2);
+
+  let empName: string = "Long An";
+
+  var booleanName: boolean = true;
+
+  //block scope
+  {
+    let empName;
+    empName = "MinhNH";
+    console.log("empName", empName);
+  }
+
+  {
+    const car = { color: "red", brand: "Honda" }
+    console.log("Car name1: ", car.brand + "-" + car.color)
+    car.brand = "Toyota"
+    console.log("Car name2: ", car.brand + "-" + car.color)
+  }
+
+  //hoisting 
+  {
+    a = "car";
+    // b = "bike";
+    // c = "moto";
+
+    console.log("Hoisting var: ", a);
+    // console.log("Hoisting let: ", b);
+    // console.log("Hoisting const: ", c);
+
+    var a;
+    // let b;
+    // const c;
+  }
+
+  // demo array
+  {
+    const nameArray: string[] = ["Minh", "Long An"];
+    console.log("Array name1: ", nameArray);
+    nameArray.push("TPHCM");
+    console.log("Array name2: ", nameArray);
+
+    const numberArray: number[] = [1, 2, 3];
+    console.log("Array number1:", numberArray);
+    numberArray.push(5)
+    console.log("Array number2:", numberArray);
+  }
+
+  // demo tuples
+
+  const myTuples: [string, number, boolean] = ["Minh", 24, true]
+
+
+  // demo object
+
+  const motorbike: { brand: string, model: string, prize: number } = { brand: "Honda", model: "WinnerX", prize: 400 }
+
+
+  //demo enum
+
+  enum age {
+    Twenty = 20,
+    TwentyOne = 21,
+    TwentyTwo = 22,
+    TwentyThree = 23,
+  }
+
+
+
+
 
   return (
     <>
@@ -35,8 +102,12 @@ function App() {
           {typeof empName}: {empName}
           <hr />
           {typeof booleanName}: {booleanName.toString()}
+          <hr />
+          My tuples: {myTuples}
           <br />
-
+          Object motor: {motorbike.brand} {motorbike.model} {motorbike.prize}
+          <br />
+          Enum: {age.Twenty}
         </p>
       </div>
     </>
