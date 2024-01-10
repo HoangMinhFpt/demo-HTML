@@ -75,7 +75,49 @@ function App() {
     TwentyThree = 23,
   }
 
+  // demo alias
+  type ComputerName = string;
+  type ComputerModel = string;
+  type ComputerPrize = number;
+  type Computer = {
+    name: ComputerName,
+    model: ComputerModel,
+    prize: ComputerPrize,
+  };
 
+  const computerName: ComputerName = "Acer"
+  const computerModel: ComputerModel = "Predator"
+  const computerPrize: ComputerPrize = 3000
+  const computer: Computer = {
+    name: computerName,
+    model: computerModel,
+    prize: computerPrize
+  };
+  console.log("Computer: ", computer);
+
+  // demo interface
+  interface Computer1 {
+    name: string
+    model: string
+  }
+
+  interface PrizeComputer extends Computer1 {
+    prize: number
+  }
+
+  const prizeComputer: PrizeComputer = {
+    name: "Acer",
+    model: "Predator",
+    prize: 3000
+  }
+  console.log("Interface computer: ", prizeComputer);
+
+  // demo Union
+
+  function nameLaptop(name: string | number) {
+    console.log(`My laptop is ${name}`);
+  }
+  nameLaptop("Acer")
 
 
 
