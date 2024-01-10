@@ -9,3 +9,8 @@ POST làm được GET không làm được:
 	+ Các tham số, dữ liệu không lưu trong lịch sử web
 	+ Không hạn chế độ dài dữ liệu
 	+ Gửi dữ liệu đến server được an toàn.
+
+GET làm được POST không làm được:	
+	+ Lưu vào bộ nhớ cache
+	+ Giữa lại lịch sử web
+	+ Lưu lại trong bookmark
