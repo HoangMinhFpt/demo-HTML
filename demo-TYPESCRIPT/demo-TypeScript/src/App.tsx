@@ -119,7 +119,31 @@ function App() {
   }
   nameLaptop("Acer")
 
+  //demo funtions
+  //return type
+  function getDate(): string {
+    return new Date().toLocaleString()
+  }
+  //Parameter 
+  function multiplication(a: number, b: number, c?: number) {
+    return a * b * (c || 0)
+  }
+  //Named parameter
+  function add({ num1, num2 }: { num1: number, num2: number }) {
+    return num1 + num2
+  }
+  //Rest parameter(0: add, 1: multi, )
+  function multi(a: number, b: number, ...rest: number[]) {
+    return a * b * rest.reduce((p, c) => p * c, 1)
+  }
+  //Type alias
+  type Sub = (value: number) => number;
+  const subFunction: Sub = (value) => value - 5
 
+  //demo casting
+  //with <>
+  let x: unknown = "hello";
+  console.log((x as string).length);
 
   return (
     <>
@@ -150,6 +174,17 @@ function App() {
           Object motor: {motorbike.brand} {motorbike.model} {motorbike.prize}
           <br />
           Enum: {age.Twenty}
+          <hr />
+          Date function: {getDate()}
+          <br />
+          Parameter function: {multiplication(2, 4, 5)}
+          <br />
+          Named parameter function: {add({ num1: 3, num2: 5 })}
+          <br />
+          Rest parameter function: {multi(2, 4, 6, 8)}
+          <br />
+          Type alias function: {subFunction(10)}
+          <hr />
         </p>
       </div>
     </>
