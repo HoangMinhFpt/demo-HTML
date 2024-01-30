@@ -1,0 +1,47 @@
+Global scope: các biến khai báo bất kỳ funtion. Với các biến thuộc Global Scope đều có thể truy cập được từ bất cứ đâu trong JavaScript.
+
+Function scope: các biến khai báo cục bộ bên trong 1 function
+
+Loop scope: biến có phạm vi trong các vòng lập.
+
+Block scope (xuất hiện khi ES6-ES 2015 ra mắt): các biến khai báo bằng "let", "const" thuộc block. Các biến không thể truy cập ở bên ngoài block.
+Biến khai báo bằng "var" không thuộc block nên có thể truy cập ngoài block đó. Block là 1 đoạn code được giới hạn bởi {}.
+
+Hoisting: cơ chế của JS, các biến hay function khi được khai báo sẽ được đưa lên trên cùng của scope trước khi code còn lại được thực hiện. Có thể sử dụng trước khi nó được khai báo.
+
+Lifecycle biến trong JS: Khai báo => Gán giá trị => Sử dụng => Giải phóng.
+
+Var: Khi khai báo "var", thì biến đó có thể Global scope hoặc là function scope (biến "var" có thể khai báo lại và update). Giá trị ban đầu là "undefined".
+
+	var greeter;
+	greeter = "hi"
+	console.log(greeter)
+
+error: 
+
+	var greeter;
+ 	console.log(greeter);
+	greeter = "say hello"
+
+
+Let: cải tiến so với cách khai báo "var". Scope của "let" là block scope. (biến let có thể update nhưng không thể khai báo lại). Không có giá trị ban đầu, cố dùng "let" trước khai báo sẽ có lỗi tham chiếu (Reference Error).
+	
+	let greeting = "say Hi";			
+ 	greeting = "say Hello instead";   
+	
+error: 		
+	let greeting = "say Hi";
+	let greeting = "say Hello instead"; 
+
+Const: các biến được khai báo bằng "const" có giá trị không đổi. Scope của "const" là block scope. (biến "const" không thể khai báo hoặc update lại). Mọi khai báo "const" đều phải được khai báo tại thời điểm khởi tạo. Một đối tượng "const" không thể update, nhưng các thuộc tính của nó có thể update.
+
+	const greeting = {
+       		message: "say Hi",
+        	times: 4
+ 	}
+
+update như sau: 
+
+	greeting.message = "say Hello instead";
+
+

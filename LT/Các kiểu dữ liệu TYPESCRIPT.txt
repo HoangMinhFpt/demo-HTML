@@ -1,0 +1,10 @@
+Các kiểu dữ liệu TYPESCRIPT:
+	+ boolean
+	+ number
+	+ string
+	+ array
+	+ tuple
+	+ enumm
+	+ any
+	+ void
+	+ null-undefined

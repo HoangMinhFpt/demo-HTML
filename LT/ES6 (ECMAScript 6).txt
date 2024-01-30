@@ -1,0 +1,74 @@
+ES6 (ECMAScript 6)
+	
+10 tính năng:
+	
+	1. Default Parameter (khai báo tham số mặc định): 
+
+		var link = function(height = 50, color = 'red', url = 'http://azat.co') {}
+ 
+	2. Template Literals (interpolation): một cách hiển thị các biến trong chuỗi.
+
+		var name = `Your name is ${first} ${last}.`
+		var url = `http://localhost:3000/api/messages/${id}`
+
+	3. Multi-line String: 1 chuỗi có nhiều dòng.
+		
+		var roadPoem = `Then took the other, as just as fair,
+    			And having perhaps the better claim
+    			Because it was grassy and wanted wear,
+    			Though as for that the passing there
+    			Had worn them really about the same,`
+
+		var fourAgreements = `You have the right to be you.
+    		You can only be you when you do your best.`
+
+	4. Destructuring Assignment: 
+	
+		var {house, mouse} = $('body').data()
+
+	5. Enhanced Object Literals: 
+
+		function getCar(make, model, value) {
+			return {
+				// computed values now work with
+				// object literals
+				['make' + make]: true
+			};
+		}
+
+	6. Arrow function: 
+
+		function Person() {
+  			// The Person() constructor defines `this` as an instance of itself.
+  			this.age = 0;
+
+  			setInterval(function growUp() {
+    				// In non-strict mode, the growUp() function defines `this` 
+    				// as the global object, which is different from the `this`
+    				// defined by the Person() constructor.
+    				this.age++; // vẫn gọi được giống như this ở trong Java
+  			}, 1000);
+		}
+
+		var p = new Person();
+
+	7. Promise: 
+
+		var wait1000 =  new Promise((resolve, reject)=> {
+  			setTimeout(resolve, 1000)
+		}).then(()=> {
+  			console.log('Yay!')
+		})
+
+	8. Block-Scope Constructs, Let and Const:
+
+	9. Classes: sửa dụng nhiều cho lập trình hướng đối tượng.
+
+	10. Modules: chúng ta có thể import module đã export vào những file js khác. 
+
+ 
+
+
+
+
+ 

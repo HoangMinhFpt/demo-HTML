@@ -1,0 +1,104 @@
+CSS (Cascading Style Sheets)
+
+Định nghĩa: 1 ngôn ngữ được sử dụng để tìm và định dạng lại các phần tử cho trang web.
+
+Cách nhúng CSS vào website:
+	
+	- Inline CSS: Nhúng trực tiếp vào HTML thông qua cặp thẻ <style> </style>.
+	- Internal CSS: Dùng thẻ <style> bên trong thẻ <head> của HTML để tạo ra nơi viết mã CSS.
+	- External CSS: Tạo tập tin .css riêng và nhúng vào HTML thông qua thẻ <link>. hoặc  import.
+
+Selector: dùng để tìm các phần tử HTML mà muốn định dạng
+	Có 5 kiểu SELECTOR:
+		+ Simple selectors (chọn dựa trên ".class", "#id", element, *)
+		+ Combinator selectors (chọn các phần tử dựa trên mối quan hệ cụ thể giữa chúng)
+			- descendant selector_con cháu (space)
+			- child selector_con (>)
+			- adjacent sibling selector_anh chị em liền kề (+)
+			- general sibling selector_anh chị em chung (~)
+		+ Pseudo-class selectors (chọn các phần tử dựa trên trạng thái nhất định) (selector:pseudo-class{...})
+		+ Pseudo-elements selectors (chọn 1 phần của phần tử) (selector::pseudo-element{...})
+		+ Attribute selectors (chọn các phần tử dựa trên 1 thuộc tính hoặc giá trị thuộc tính)
+			- a[attribute]
+			- a[attribute = "value"]
+			- a[attribute ~= "value"]
+			- a[attribute |= "value"]
+			- a[attribute ^= "value"]
+			- a[attribute $= "value"]
+			- a[attribute *= "value"]
+Box model:
+	- Padding: khoảng trống nằm giữa border và content.
+	- Border: dường viền xung quanh padding
+	- Margin: khu vực bên ngoài border
+Position: định vị vị trí hiển thị của các thẻ HTML
+	- static: giá trị hiển thị mặc định trong position. Các thành phần sẽ nằm đúng theo luồng của trang web.
+	- relative: định vị vị trí tương đối cho các thành phần. Không bị ảnh hưởng bởi giá trị ban đầu hay các thành phần khác.
+	- fixed: định vị và giúp cho phần tử cố định luôn ở 1 vị trí ngay cả khi cuộn trang.
+	- absolute: định vị vị trí tuyệt đối cho thành phần bao ngoài.
+	- sticky: sự kết hợp của relative và fixed.
+Float:
+	DN: chỉ định phần tử nổi lên không gian bao quanh nó.
+	- left: nổi và cố định phần tử bên trái 
+	- right: nổi và cố định phần tử bên phải
+	- none: phần tử không nổi.
+	- inherit: phần tử kế thừa float từ phần tử cha. 
+Display:
+	ĐN: được sử dụng để chỉ định cách hiển thị một phần tử trên trang web.
+		- Mọi phần tử đều có giá trị hiển thị mặc định, tuỳ thuộc vào kiểu phần tử đó. Hầu hết hiển thị mặc định là inline-block.
+		- Được sử dụng để thay đổi hành vi hiển thị mặc định của các phần tử.
+	- block: luôn bắt đầu trên 1 dòng mới và chiếm toàn bộ chiều ngang có sẵn.
+	- inline: không bắt đầu trên 1 dòng mới và chỉ chiếm phần chiều rộng cần thiết.
+	- inline-block: hiển thị phần tử dưới dạng 1 khối chứa inline. Phần tử đó được định dạng là inline, nhưng có thể áp dụng chiều dài-rộng cho phần tử.
+Flexbox:
+	ĐN: Kiểu bố cục trang có khả năng tự cân đối kích thước, chiều cao/rộng, thứ tự bên trong để phù hợp với các kích thước thiết bị hiển thị.
+	- Thành phần quan trọng:
+		+ container: thành phần lớn bao quanh các phần tử, các item bên trong sẽ hiển thị dựa trên thiết lập cho container này.
+		+ item: phần tử con, thiết lập hiển thị nó sẽ sử dụng bao nhiêu cột,...
+	- Flex-container: 
+		+ flex-direction: xác định hướng mà vùng chứa muốn sắp xếp các item. 
+			row: mặc định, sắp xếp theo chiều ngang, trái sang phải
+			row-reverse: sắp xếp theo chiều ngang, phải sang trái
+			column: sắp xếp theo chiều dọc, trên xuống dưới
+			column-reverse: sắp xếp theo chiều dọc, dưới lên trên
+		+ flex-wrap: các item sẽ thay đổi kích thước phần tử để hiển thị khi resize web
+			nowrap: mặc định, tất cả item nằm trên 1 hàng
+			wrap: khi kích thước container thay đổi, kích thước chiều ngang các item cộng lại lớn hơn container thì item sẽ xuống dòng
+			wrap-reverse: các item sẽ nhảy lên trên
+		+ flex-flow: sử dụng để gộp chung 1 thuộc tính flex-direction và flex-wrap
+		+ justify-content: được sử dụng để căn chỉnh các mục linh hoạt
+			center: item nằm giữa container
+			flex-start: giá trị mặc định, item sẽ bắt đầu ở đầu  
+			flex-end: item sẽ bắt đầu ở cuối vùng chứa
+			space-between: các item sẽ có khoảng cách giữa các phần tử bằng nhau
+			space-around: các item sẽ có khoảng cách giữa các phần tử và có khoảng cách 2 bên cạnh và chúng đều bằng nhau
+			space-evenly: các item được phân phối sao cho khoảng cách giữa hai item bất lỳ, giữa item và các lề là bằng nhau
+		+ align-item: được sử dụng để căn chỉnh các mục linh hoạt
+			stretch: giá trị mặc định, các phần tử sẽ kéo dài lắp đầy container, ưu tiên giá trị height/width
+			flex-start: item sẽ bắt đầu từ lề cross-start
+			flex-end: item sẽ bắt đầu từ lề cross-end
+			center: item sẽ căn giữa theo chiều cross axis
+			baseline: item sẽ căn chỉnh theo đường cơ sở của chúng
+		+ align-content: để căn chỉnh khoảng cách các item bên trong container theo trục cross axis
+			center: item sẽ nằm giữa container căn theo cross-axis
+			flex-start: item sẽ bắt đầu từ lề chứa cross-start của container 
+			flex-end: item sẽ bắt đầu từ lề chứa cross-end của container 
+			space-between: các item sẽ có khoảng cách giữa các phần tử bằng nhau do container tự động căn khoảng cách, item đầu tiên sát lề chứa cross-start, item cuối cùng sát lề chứa cross-end.
+			space-around: tương tự space-between, nhưng khác ở chỗ là mỗi item có khoảng cách 2 bên cạnh và những khoảng cách này bằng nhau.
+			stretch: giá trị mặc định, các phần tử sẽ được kéo dài, căn chỉnh sao cho lấp đầy container chứa nó (vẫn ưu tiên giá trị height/width)
+	- Flex-item:
+		+ Order: có thể sắp xếp vị trí của các item
+		+ flex-grow: cho phép các phàn tử giãn theo chiều ngang của container
+		+ flex-shrink: cho phép các phần tử co lại khi thay đổi chiều ngang của container
+		+ flex-basic: xác định độ dài ban đầu của 1 item
+		+ flex: thuộc tính viết tắt của các thuộc tính flex-grow, flex-shrink, flex-basic
+		+ align-self: tương đương với align-item của container, đặt lại vị trí item mà align-items đã quy định
+			flex-start, flex-end, center, stretch, baseline
+		
+Responsive Web Design:
+	ĐN: trang web trông đẹp mắt ở tất cả các thiết bị, chỉ sử dụng cho trang HTML và CSS, không phải là 1 ứng dụng JS.
+	- Viewport: khu vực hiển thị cho người dùng của trang web
+		+ Thay đổi tuỳ theo thiết bị và nhỏ hơn khi hiển thị trên điện thoại hơn trên màn hình máy tính.
+	- Setting: thông qua thẻ <meta> cho phép thiết kế web kiểm soát khung hình
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		+ width=device-width: đặt chiều rộng của trang theo chiều rộng màn hình của thiết bị
+		+ initial-scale=1.0: đặt mức thu phóng ban đầu khi trang tải lên trình duyệt làn đầu

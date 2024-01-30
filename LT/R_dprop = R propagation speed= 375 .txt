@@ -1,0 +1,3 @@
+Hôm qua đã xong phần between, count, sum, avg, wildcard, in có example
+Do hôm qua có dư thời gina em làm thêm phần join, inner join
+Hôm nay sang phần left join, right join, full join, self join, sql after table  và example cho từng phần

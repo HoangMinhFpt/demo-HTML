@@ -1,0 +1,9 @@
+Overloading (nạp chồng): cho phép cùng 1 class có thể có nhiều phương thức cùng tên nhưng khác nhau về số lượng tham số hoặc kiểu dữ liệu tham số.
+
+Overriding (ghi đè phương thức): được sử dụng trong trường hợp lớp con kế thừa lớp cha và muốn định nghĩa lại 1 phương thức đã có ở lớp cha. 1 lớp cha
+có thể có nhiều lớp con kế thừa, tuy nhiên phương thức ở lớp cha phù hợp với lớp con này nhưng không phù hợp với lớp con khác.
+
+Truyền tham trị (pass by value): truyền vào giá trị của biến. Khi ta truyền giá trị của biến trong hàm, khi đó hàm sẽ tự động tạo ra 1 biến mới lưu trữ
+giá trị này và chỉ thao tác trên nó, do đó khi hàm kết thúc thì giá trị của biến ban đầu không thay đổi.
+
+Truyển tham chiếu (pass by reference): Truyển vào địa chỉ ô nhớ của biến. Do đó sẽ làm thay đổi giá trị của biến bên trong hàm thì giá trị của biến sẽ thay đổi kể cả trong và ngoài hàm. 

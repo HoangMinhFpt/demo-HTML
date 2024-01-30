@@ -1,0 +1,9 @@
+"THIS" keyword:
+	+ Đề cập đến 1 đối tượng 
+	+ Đối tượng hiện tại đang sử dụng
+Trong 1 phương thức đối tượng, "this" đề cập đến đối tượng
+Khi 1 mình, đề cập đến global object (đối tượng toàn cục)
+Trong 1 hàm, đề cập đến global object
+Trong 1 hàm có Strick Mode, thì "this" là undefined
+Trong 1 event, thì "this" là phần tử đã được nhận event
+Các phương thức như call(), apply(), bind() thì "this" có thể tham chiếu đến bất kỳ đối tượng nào.

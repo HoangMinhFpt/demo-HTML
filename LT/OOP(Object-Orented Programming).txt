@@ -1,0 +1,44 @@
+OOP(Object-Orented Programming):
+
+	- ĐN: kỹ thuật lập trình sử dụng các đối tượng(objects) để xây dựng ứng dụng.
+
+	- Lợi ích: 
+
+		+ tiếp cận thực tế.
+
+		+ dễ bảo trì, mở rộng và code gọn, sạch hơn.
+
+	- 2 thành phần chính:
+
+		+ Object(đối tượng): 
+			_ Properties: thuộc tính của object.(thông tin, đặc điểm)
+			_ Methods: phương thức tương ứng với thuộc tính.(thao tác, hành động)
+
+		+ Class(lớp): các cấu trúc để phục vụ cho việc xây dựng các Object.
+			
+	- 4 tính chất cơ bản:
+
+		+ Encapsulation (tính đóng gói)_hiding information: các dữ liệu và phương thức có liên quan
+	với nhau được đóng gói thành các lớp để tiện cho việc quản lý và sử dụng. Ngoài ra nó còn che giấu 1 số 
+	thông tin và chi tiết để bên ngoài ko thể nhìn thấy.
+
+			_ public: có thể truy cập từ bất cứ đâu.
+			_ private: chỉ có thể truy cập ở bên trong class.
+			_ protected: chỉ có thể truy cập ở bên trong class và clas kế thừa class đó.
+			_ internal: giống với public nhưng chỉ hạn chế trong 1 assembly.
+
+		+ Inheritance (tính kể thừa): xây dựng class mới dựa trên các class đã có. 
+
+	Các class kế thừa sẽ kế thừa bao gồm toàn bộ các propertiess và methods từ class cha. Việc kế thừa này 
+	giúp tái sử dụng các class đã có.
+
+		+ Polymorphism (tính đa hình): 1 hành động có thể được thực hiện bằng nhiều cách khác nhau. 
+
+			_ static polymorphism(đa hình tĩnh): cơ chế định nghĩa lại các methods cùng tên,
+		nhưng khác nhau số lượng và kiểu tham số. (method overloading)
+			_ dynamic polymỏphism (đa hình động): định nghĩa lại các methods cùng tên, cùng tham số
+		và kiểu trả về từ class cha. (method overriding)
+		
+		+ Abstraction (tính trừu tượng): tổng quát hóa một đối tượng. Nghĩa là ẩn đi những thông tin 
+	chi tiết bên trong, chỉ thể hiện ra những thông tin bên ngoài. Và nhìn vào thông tin đó có thể hiểu 
+	đối tượng đó làm gì.

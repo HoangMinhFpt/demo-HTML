@@ -1,0 +1,21 @@
+AJAX (Asynchronous Javascript and XML): phương thức trao đổi dữ liệu với máy chủ và cập nhật 1 hay nhiều phần cuat trang web, hoàn toàn không reload lại toàn bộ trang. Được viết bằng javascript chạy trên client. Sử dụng các đối tượng XMLHttpRequest để tương tác với 1 máy chủ web thông qua js.
+
+XMLHttpRequest: phương thức được tích hợp sẵn trong trình duyệt để thực hiện những HTTP Request để lấy dữ liệu từ db đến cho js.
+
+Cách thức hoạt động: 
+	https://topdev.vn/blog/wp-content/uploads/2019/03/d0276277-2c0d-45e1-96d4-a1c652070871.png
+
+Ưu điểm:
+	+ Trải nghiệm của người dụng được cải thiện
+	+ Tăng tốc độ giảm mức sử dụng băng thông
+	+ Tăng khả năng tương thích
+	+ Hỗ trợ xử ký không đồng bộ
+	+ Điều hướng dễ dàng hơn
+Nhược điểm:
+	+ Không tương thích với trình duyệt
+	+ Đe doạ bảo mật
+	+ Không thể dùng nút Back
+
+
+	
+	

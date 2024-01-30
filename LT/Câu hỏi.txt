@@ -1,0 +1,61 @@
+Câu hỏi:
+	ReactJS:
+		1) Những đặc điểm:
+			+ JSX
+			+ Component
+			+ DOM ảo
+			+ Truyền dữ liệu 1 chiều
+			+ Hiệu suất cao
+		2) Cách sử dụng hàm render()?
+		3) State, Props trong React là gì?
+		4) lifecycle method của components
+		5) Higher-order component là gì?
+	Redux:
+		1) Các component của Redux, vai trò?
+		2) Redux là gì? 
+	HTML:
+		1) HTML, HTML tag là gì?
+		2) Element trong HTML
+	CSS:
+		1) Các Selector trong CSS
+		2) Cách nhúng CSS vào HTML, phân tích lợi-hại 
+		3) Box model 
+		4) Flexbox
+		5) Giải thích về responsive
+		6) positioning(PHÂN BIỆT block, relative, inline, inline-block,...) 
+		7) form, tại sao dùng form?
+
+	ES6, JS:
+		1) Các kiểu dữ liệu trong JS
+		2) Phân biệt var, const, let
+		3) Hoisting là gì?
+		4) Block scope là gì?
+		5) Các tính năng mới trong ES6?
+		6) Khác biệt giữa NULL và UNDEFINED, UNDECLARED
+		7) THIS keyword
+		8) AJAX
+	SQL:
+		1) SQL là gì?
+		2) Vai trò của SQL
+		4) Khác biệt giữa HAVING và WHERE
+		5) Khác biệt giữa UNION và UNION ALL
+		6) Khác biệt giữa UNIQUE và PRIMARY KEY 
+		7) Toán tử nào được sử dụng để tìm kiếm xem chuỗi ký tự có khớp với mẫu đã chỉ định hay không?
+		8) Order by, Group by, Cursor
+		9) View, Function, stored procedurce
+		10) Paging, Index
+	OOP:
+		1) OOP là gì?
+		2) Các tính chất của OOP
+		3) Lợi ích của OOP?
+	TypeScript:
+		1) Các kiểu nguyên thuỷ của TypeScript
+		2) Cách mảng hoạt động trong TypeScript
+		3) Unknown type là gì? Khi nào sử dụng?
+		4) Interface trong TS
+		5) Khi nào dùng interface, class 
+		6) Sao phải dùng TS mà không JS
+	REST FULL API:
+		1)
+ 
+		
